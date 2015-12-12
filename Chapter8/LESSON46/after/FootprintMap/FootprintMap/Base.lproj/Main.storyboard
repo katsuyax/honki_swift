@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FootprintMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oMK-ch-3v4">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVz-ZB-VRc">
+                                <rect key="frame" x="275" y="520" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1VI-SQ-JNg"/>
+                                    <constraint firstAttribute="width" constant="50" id="UBY-iH-w87"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Pin"/>
+                                <connections>
+                                    <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YN-ag-Qbv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oMK-ch-3v4" secondAttribute="bottom" id="E7L-CE-uWf"/>
+                            <constraint firstItem="SVz-ZB-VRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HC5-eg-hZ4"/>
+                            <constraint firstItem="oMK-ch-3v4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fMm-NB-zqc"/>
+                            <constraint firstAttribute="trailing" secondItem="oMK-ch-3v4" secondAttribute="trailing" id="plD-6I-fiV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SVz-ZB-VRc" secondAttribute="bottom" constant="30" id="wVh-pe-IgA"/>
+                            <constraint firstItem="oMK-ch-3v4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xtD-63-Ytx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="oMK-ch-3v4" id="EXv-Ub-soG"/>
+                        <outlet property="pinButton" destination="SVz-ZB-VRc" id="Dgi-se-hFK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

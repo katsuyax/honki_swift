@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Internationalization" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-N8-PrG">
+                                <rect key="frame" x="250" y="48" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DxS-jN-Om2"/>
+                                    <constraint firstAttribute="height" constant="25" id="U7r-Po-b5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcB-Rj-CZH">
+                                <rect key="frame" x="278" y="151" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e37-Ch-DtE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00b-Vn-AaW">
+                                <rect key="frame" x="250" y="96" width="100" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="00b-Vn-AaW" firstAttribute="height" secondItem="zOO-N8-PrG" secondAttribute="height" id="0iS-5X-VrH"/>
+                            <constraint firstItem="OcB-Rj-CZH" firstAttribute="top" secondItem="00b-Vn-AaW" secondAttribute="bottom" constant="30" id="8qr-pa-id3"/>
+                            <constraint firstItem="zOO-N8-PrG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="Ec5-VP-7UK"/>
+                            <constraint firstItem="OcB-Rj-CZH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MZh-Fd-Gf0"/>
+                            <constraint firstItem="00b-Vn-AaW" firstAttribute="top" secondItem="zOO-N8-PrG" secondAttribute="bottom" constant="23" id="cII-2b-A0s"/>
+                            <constraint firstItem="00b-Vn-AaW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBg-mw-phA"/>
+                            <constraint firstItem="zOO-N8-PrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCr-o2-ozU"/>
+                            <constraint firstItem="00b-Vn-AaW" firstAttribute="width" secondItem="zOO-N8-PrG" secondAttribute="width" id="rg9-WM-vCQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

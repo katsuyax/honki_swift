@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sound" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBJ-8L-bu5">
+                                <rect key="frame" x="140" y="60" width="320" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1Q-MW-6y9">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <state key="normal" title="Button" image="dram"/>
+                                        <state key="highlighted" image="dram_on"/>
+                                        <connections>
+                                            <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAL-yk-Gqf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuU-iQ-NtV">
+                                        <rect key="frame" x="0.0" y="325" width="150" height="155"/>
+                                        <state key="normal" title="Button" image="dram"/>
+                                        <state key="highlighted" image="dram_on"/>
+                                        <connections>
+                                            <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzW-4D-IJe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-6u-d5V">
+                                        <rect key="frame" x="176" y="325" width="144" height="155"/>
+                                        <state key="normal" title="Button" image="dram"/>
+                                        <state key="highlighted" image="dram_on"/>
+                                        <connections>
+                                            <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYt-GL-rFo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7v-xY-ufX">
+                                        <rect key="frame" x="0.0" y="165" width="150" height="150"/>
+                                        <state key="normal" title="Button" image="dram"/>
+                                        <state key="highlighted" image="dram_on"/>
+                                        <connections>
+                                            <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCk-5s-dzP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LU-Qg-Pez">
+                                        <rect key="frame" x="176" y="0.0" width="144" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="144" id="6aS-Xb-Tqy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="dram"/>
+                                        <state key="highlighted" image="dram_on"/>
+                                        <connections>
+                                            <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WxV-1y-ypA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="621-SP-XYs">
+                                        <rect key="frame" x="176" y="165" width="144" height="150"/>
+                                        <state key="normal" title="Button" image="dram"/>
+                                        <state key="highlighted" image="dram_on"/>
+                                        <connections>
+                                            <action selector="pushedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRs-hn-akE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DYc-6u-d5V" secondAttribute="bottom" id="46k-j0-W1h"/>
+                                    <constraint firstItem="DYc-6u-d5V" firstAttribute="top" secondItem="BuU-iQ-NtV" secondAttribute="top" id="55Y-gp-fka"/>
+                                    <constraint firstItem="621-SP-XYs" firstAttribute="leading" secondItem="9LU-Qg-Pez" secondAttribute="leading" id="6Xz-iJ-000"/>
+                                    <constraint firstItem="9LU-Qg-Pez" firstAttribute="top" secondItem="w1Q-MW-6y9" secondAttribute="top" id="91x-e5-cjL"/>
+                                    <constraint firstItem="BuU-iQ-NtV" firstAttribute="trailing" secondItem="d7v-xY-ufX" secondAttribute="trailing" id="DaB-DH-wAe"/>
+                                    <constraint firstItem="621-SP-XYs" firstAttribute="top" secondItem="d7v-xY-ufX" secondAttribute="top" id="PGU-qh-pnd"/>
+                                    <constraint firstItem="9LU-Qg-Pez" firstAttribute="leading" secondItem="w1Q-MW-6y9" secondAttribute="trailing" constant="26" id="aYt-RA-qbx"/>
+                                    <constraint firstAttribute="width" constant="320" id="dTM-Vh-LjM"/>
+                                    <constraint firstItem="d7v-xY-ufX" firstAttribute="bottom" secondItem="621-SP-XYs" secondAttribute="bottom" id="gQM-24-uKR"/>
+                                    <constraint firstItem="d7v-xY-ufX" firstAttribute="leading" secondItem="BuU-iQ-NtV" secondAttribute="leading" id="gjz-VX-1r2"/>
+                                    <constraint firstItem="w1Q-MW-6y9" firstAttribute="leading" secondItem="d7v-xY-ufX" secondAttribute="leading" id="iNq-dS-hMR"/>
+                                    <constraint firstItem="d7v-xY-ufX" firstAttribute="centerY" secondItem="jBJ-8L-bu5" secondAttribute="centerY" id="jHj-EN-2aY"/>
+                                    <constraint firstItem="BuU-iQ-NtV" firstAttribute="bottom" secondItem="DYc-6u-d5V" secondAttribute="bottom" id="koR-wU-jUK"/>
+                                    <constraint firstAttribute="height" constant="480" id="lrc-iZ-q7v"/>
+                                    <constraint firstItem="w1Q-MW-6y9" firstAttribute="top" secondItem="jBJ-8L-bu5" secondAttribute="top" id="lx3-Ck-6GM"/>
+                                    <constraint firstItem="d7v-xY-ufX" firstAttribute="trailing" secondItem="w1Q-MW-6y9" secondAttribute="trailing" id="m2Q-sv-K5a"/>
+                                    <constraint firstAttribute="trailing" secondItem="9LU-Qg-Pez" secondAttribute="trailing" id="mnL-KX-XWN"/>
+                                    <constraint firstItem="621-SP-XYs" firstAttribute="trailing" secondItem="9LU-Qg-Pez" secondAttribute="trailing" id="o1m-0i-mQr"/>
+                                    <constraint firstItem="DYc-6u-d5V" firstAttribute="trailing" secondItem="621-SP-XYs" secondAttribute="trailing" id="qV4-Hf-Dck"/>
+                                    <constraint firstItem="DYc-6u-d5V" firstAttribute="leading" secondItem="621-SP-XYs" secondAttribute="leading" id="rl0-Mp-VDY"/>
+                                    <constraint firstItem="BuU-iQ-NtV" firstAttribute="top" secondItem="d7v-xY-ufX" secondAttribute="bottom" constant="10" id="vpy-S9-2V5"/>
+                                    <constraint firstItem="w1Q-MW-6y9" firstAttribute="leading" secondItem="jBJ-8L-bu5" secondAttribute="leading" id="x7P-q9-zh7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jBJ-8L-bu5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEe-en-UqQ"/>
+                            <constraint firstItem="jBJ-8L-bu5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pSb-Ed-fNT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dram" width="150" height="150"/>
+        <image name="dram_on" width="150" height="150"/>
+    </resources>
+</document>
